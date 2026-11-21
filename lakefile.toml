@@ -1,0 +1,44 @@
+name = "praxis"
+version = "0.1.0"
+license = "Apache-2.0"
+defaultTargets = ["Praxis"]
+
+[leanOptions]
+linter.deprecated.syntax = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "Praxis"
+
+[lean_lib.leanOptions]
+linter.unusedSimpArgs = false
+linter.style.haveILetI = false
+linter.unusedSectionVars = false
+linter.unnecessarySeqFocus = false
+linter.unusedTactic = false
+linter.unreachableTactic = false
+linter.unnecessarySimpa = false
+linter.unusedVariables = false
+linter.deprecated = false
+linter.tacticAnalysis.introMerge = false
+exponentiation.threshold = 1024
+
+[[lean_lib]]
+name = "Cslib"
+globs = ["Cslib.+"]
+
+[[lean_lib]]
+name = "PolyFun"
+globs = ["PolyFun.+"]
+
+[[lean_lib]]
+name = "ToMathlib"
+globs = ["ToMathlib.+"]
+
+[[lean_lib]]
+name = "VCVio"
+globs = ["VCVio.+"]

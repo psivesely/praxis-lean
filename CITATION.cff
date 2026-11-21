@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this development, please cite the paper."
+title: "praxis-lean: Lean 4 proofs for Praxis"
+type: software
+authors:
+  - family-names: Tse
+    given-names: David
+  - family-names: Vanjani
+    given-names: Nikhil
+  - family-names: Vesely
+    given-names: Psi
+license: Apache-2.0
+repository-code: "https://github.com/psivesely/praxis-lean"
+preferred-citation:
+  type: unpublished
+  title: "Praxis: Practical Witness Encryption for NP"
+  authors:
+    - family-names: Tse
+      given-names: David
+    - family-names: Vanjani
+      given-names: Nikhil
+    - family-names: Vesely
+      given-names: Psi
+  year: 2026
